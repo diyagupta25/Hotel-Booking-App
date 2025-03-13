@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jaipur Palace"
+            android:textSize="40sp"
+            android:textColor="#093960"
+            android:layout_margin="20dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="cursive"
+            android:textStyle="bold"/>
+
+        <!-- CardView for Single Bedroom -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSingle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/txt"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewSingle"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/single_room" />
+
+                <TextView
+                    android:id="@+id/txtSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A single bedroom in a hotel is a cozy space designed for one guest, featuring a comfortable bed, private bathroom, Wi-Fi, and essential amenities."
+                    android:textSize="18sp"
+                    android:textColor="#093960"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/btnBookSingle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Now"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:backgroundTint="#000080"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Double Bedroom -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDouble"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/cardSingle"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewDouble"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/double_room" />
+
+                <TextView
+                    android:id="@+id/txtDouble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A double bedroom in a hotel is designed for two guests, featuring a larger bed or twin beds, a private bathroom, Wi-Fi, and comfortable space for couples or friends."
+                    android:textSize="18sp"
+                    android:textColor="#093960"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/btnBookDouble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Now"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:backgroundTint="#000080"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- CardView for Deluxe Bedroom -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardSuperDeluxe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/cardDeluxe"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewSuperDeluxe"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/super_delux" />
+
+                <TextView
+                    android:id="@+id/txtSuperDeluxe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A Super Deluxe bedroom provides an unparalleled level of luxury, featuring exquisite decor, an expansive layout, plush high-end furnishings, a lavish private bathroom, high-speed Wi-Fi, and premium amenities such as a mini-bar, personalized room service, and enhanced comfort for a truly indulgent stay."
+                    android:textSize="18sp"
+                    android:textColor="#093960"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/btnBookDeluxe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Now"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:backgroundTint="#000080"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardDeluxe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@id/cardDouble"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="8dp"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/imageViewDeluxe"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/delux_bed" />
+
+                <TextView
+                    android:id="@+id/txtDeluxe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="A deluxe bedroom offers premium comfort with elegant decor, a spacious layout, high-end furnishings, a private bathroom, free Wi-Fi, and additional luxury amenities."
+                    android:textSize="18sp"
+                    android:textColor="#093960"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-medium"
+                    android:textAlignment="center"/>
+
+                <Button
+                    android:id="@+id/btnBookSuperDeluxe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Book Now"
+                    android:textSize="16sp"
+                    android:padding="10dp"
+                    android:backgroundTint="#000080"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="16dp"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>
